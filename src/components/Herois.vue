@@ -188,7 +188,7 @@
             getUrlEvents(){
                 fetch(this.UrlEvents+"?ts="+this.timeStamp+"&apikey="+this.apiKey+"&hash="+this.md5+"&limit=1"
                 ).then((response) => {
-                    return response.json();
+                    return response.json(); 
                 }).then((jsonParsed) => {
                     const dados = jsonParsed
                     var urlAux = dados.data.results[0].thumbnail.path
